@@ -7,7 +7,7 @@ class Stack:
         for item in items:
             if(not self.full()):
                 self.items.append(item)
-    pass
+
 
     def isEmpty(self):
         return self.items == []
@@ -17,13 +17,12 @@ class Stack:
             self.items.append(item)
         else:
             return None
-    pass
 
     def pop(self):
         if self.isEmpty():
             return None
         return self.items.pop()
-    
+
     def peek(self):
         return self.items[len(self.items)]
 
